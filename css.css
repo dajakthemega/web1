@@ -1,0 +1,203 @@
+/* osnovno */
+#jaki{
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);}
+
+header {background-color: black}
+
+
+body {background-color: rgb(133, 130, 130);} 
+
+
+main{margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;}
+
+main p{
+    text-indent: 20px;
+    font-family: Arial; }
+main a{
+    text-decoration: none;}
+main a:visited{color: white;}
+    
+/* topnav */
+ul {
+    height: 40px;
+	list-style-type: none;
+	margin: 0;
+	padding: 2px;
+	overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.788);}
+li{
+    float: left;}
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Black And White Picture', sans-serif;
+    color: white;
+    font-size: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;}
+li a:hover{
+    background-color: rgb(39, 121, 161);
+    color: black;}
+.selected{
+        color: rgb(202, 13, 13);}
+
+
+
+/* footer */
+footer{
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 98%;
+    color: rgb(133, 130, 130);
+    height: 40px;
+    background-color: black;    }
+footer img{
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    left:60%;
+    bottom: 4px;  }
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px; }
+/* news */
+ .news figure{
+    border: 1px solid gray;
+    text-align: center;
+    float:left;
+    overflow: hidden; }
+
+.news img{
+    float: left;
+    color: black;
+    height:175px;
+    padding-bottom: 10px;}
+.news h2{ 
+    text-align: right;
+    text-decoration-color: none;
+    font-family: 'Black And White Picture', sans-serif;}
+
+.news hr{
+    border: solid black 1px;
+    clear: both;}
+.news time {
+    font-size: 85%;
+    font-style: italic;
+    color: white;}
+.news a{
+    
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 120%;}
+.news .malitext{
+    padding-left: 350px;}
+
+
+
+ /* contact i map */
+
+
+maps{ 
+    /*kako pomaknuti desno, neide padding i margin u html5 neide ni align*/
+}
+
+
+
+input[type=text], input[type=email],select, textarea{
+    width: 500px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 95%;
+    }
+
+input[type=submit] {
+    background-color: black;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+    }
+input[type=submit]:hover {
+    background-color:rgb(39, 121, 161);
+    color:red;
+}
+label{font-family: Arial, Helvetica, sans-serif;}
+/* galeria */
+
+.gallery figure{
+    border: 1px solid black;
+    border-radius: 6px;
+    text-align: center;
+    float:left;
+    overflow: hidden;
+    background-color:  black;
+    color:white;
+    margin-bottom: 55px;}
+.gallery img:hover{opacity: 0.65;}
+.gallery figcaption {font-family: Arial;}
+.gallery a{color:white;}
+
+/* about */
+.about video{
+    float:left;
+    overflow: hidden;
+    padding-right:50px;
+    padding-bottom: 50px;
+}
+.about a{font-family: 'Black And White Picture', sans-serif;
+font-size: 120%;}
+.about time {
+    font-size: 85%;
+    font-style: italic;
+    color: white;}
+
+@media screen and (max-width: 900px) {
+        figure {
+            width: 90%;
+            margin: 1em;
+        }
+        .news img {
+            width: 95%;
+            padding: 0.5em;
+            margin: 0 1em 0.5em 0.5em;
+        }
+        .news time {
+            margin: 0 0 0 1em;
+        }
+        .gallery figure {
+            padding: 0.5em;
+            margin: 0 1em 0.5em 1em;
+            float: left;
+            width: 90%;
+            border: 1px solid black;
+        }
+        .gallery figcaption {
+            font-size: 90%;
+            text-align: center;
+        }
+        .news figure {
+            padding: 0.5em;
+            margin: 0 1em 0.5em 1em;
+            float: left;
+            width: 40%;
+            border: 1px solid black;
+        }
+        .news figcaption {
+            font-size: 90%;
+            height: 70px;
+            text-align: center;
+        }
+    }
